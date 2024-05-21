@@ -9,7 +9,7 @@ const sentence3 = 'Your phylactery can only be destroyed using :insertd:.';
 
 const insertw = ['a beautiful', 'an enormous', 'a weathered', 'a pristine'];
 
-const insertx = ['hourglass with suspended :insertb: sand', 'leather book', ':inserty: pendant', ':inserta: skull'];
+const insertx = ['hourglass with suspended :insertb: sand', 'leather book', ':inserty: pendant', ':inserta: skull', 'copper coin', 'your heart placed in a box lined with :insertb: velvet'];
 
 const inserty = ['ruby', 'sapphire', 'emerald', 'topaz', 'rose quartz', 'diamond', 'onyx'];
 
