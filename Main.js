@@ -7,7 +7,7 @@ const phylacterydefense = document.querySelector('.phylacterydefense');
 const sentence1 = 'Your phylactery is :insertw: :insertx:, with the arcane runes needed for your lichdom written with :insertz:.';
 const sentence2 = 'Your phylactery is located in :insertc:.';
 const sentence3 = 'Your phylactery can only be destroyed using :insertd:.';
-const sentence4 = 'Your phylactery is guarded primarily by :inserte: as its last line of defense.;
+const sentence4 = 'Your phylactery is guarded primarily by :inserte: as its last line of defense.';
 
 const insertw = ['a beautiful', 'an enormous', 'a weathered', 'a pristine'];
 
