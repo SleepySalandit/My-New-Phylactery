@@ -33,6 +33,8 @@ const insertf = ['fire', 'ice', 'lightning', 'earth', 'wind', 'infernal'];
 
 const insertg = ['a statuette made of :inserta:, one with your likeness', 'a vial shaped like a skull filled with acidic liquid', 'an immaculately crafted :insertb: vase', 'a beautiful golden chalice adorned with gigantic emeralds on its cardinal directions', 'a platinum cube with an immense onyx gem on each of its faces', 'a cup filled with your own blood', 'a rotten organ, supposedly from your own body'];
 
+const inserth = ['ruby', 'sapphire', 'emerald', 'topaz', 'rose quartz', 'diamond', 'onyx'];
+
 randomize.addEventListener('click', generate);
 
 function randomValueFromArray(array){
@@ -63,6 +65,7 @@ function generate()
     const itemf = randomValueFromArray(insertf);
 
     const itemg = randomValueFromArray(insertg);
+    const itemh = randomValueFromArray(inserth);
 
     newPhylactery1 =newPhylactery1.replaceAll(':insertw:', itemw);
     newPhylactery1 =newPhylactery1.replaceAll(':insertx:', itemx);
@@ -79,6 +82,7 @@ function generate()
     newPhylactery4 =newPhylactery4.replaceAll(':insertf:', itemf);
 
     newPhylactery5 =newPhylactery5.replaceAll(':insertg:', itemg);
+    newPhylactery5 =newPhylactery5.replaceAll(':inserth:', itemh);
 
     phylacteryobject.textContent = newPhylactery1;
     phylacteryobject.style.visibility = 'visible';
