@@ -31,7 +31,7 @@ const inserte = ['a hoard of your strongest minions', 'a highly complex puzzle',
 
 const insertf = ['fire', 'ice', 'lightning', 'earth', 'wind', 'infernal'];
 
-const insertg = ['a statuette made of :inserta:, one with your likeness', 'a vial shaped like a skull filled with acidic liquid', 'an immaculately crafted :insertb: vase', 'a beautiful golden chalice adorned with gigantic emeralds on its cardinal directions', 'a platinum cube with an immense onyx gem on each of its faces', 'a cup filled with your own blood', 'a rotten organ, supposedly from your own body'];
+const insertg = ['a statuette made of :inserth:, one with your likeness', 'a vial shaped like a skull filled with acidic liquid', 'an immaculately crafted clay vase', 'a beautiful golden chalice adorned with gigantic emeralds on its cardinal directions', 'a platinum cube with an immense onyx gem on each of its faces', 'a cup filled with your own blood', 'a rotten organ, supposedly from your own body'];
 
 const inserth = ['ruby', 'sapphire', 'emerald', 'topaz', 'rose quartz', 'diamond', 'onyx'];
 
