@@ -11,7 +11,7 @@ const sentence4 = 'Your phylactery is guarded primarily by :inserte: as its last
 
 const insertw = ['a beautiful', 'an enormous', 'a weathered', 'a pristine'];
 
-const insertx = ['hourglass with suspended :insertb: sand', 'leather book', ':inserty: pendant', ':inserta: skull', 'copper coin', 'box lined with :insertb: velvet, containing your rotting heart'];
+const insertx = ['hourglass with suspended :insertb: sand', 'leather book', ':inserty: pendant', ':inserta: skull', 'copper coin', 'box lined with :insertb: velvet, containing your rotting heart.'];
 
 const inserty = ['ruby', 'sapphire', 'emerald', 'topaz', 'rose quartz', 'diamond', 'onyx'];
 
@@ -54,8 +54,8 @@ function generate()
 
     const itemd = randomValueFromArray(insertd);
 
-    const itemd = randomValueFromArray(inserte);
-    const itemd = randomValueFromArray(insertf);
+    const iteme = randomValueFromArray(inserte);
+    const itemf = randomValueFromArray(insertf);
 
     newPhylactery1 =newPhylactery1.replaceAll(':insertw:', itemw);
     newPhylactery1 =newPhylactery1.replaceAll(':insertx:', itemx);
