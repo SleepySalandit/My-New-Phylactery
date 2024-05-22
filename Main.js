@@ -11,7 +11,7 @@ const sentence4 = 'Your phylactery is guarded primarily by :inserte: as its last
 
 const insertw = ['a beautiful', 'an enormous', 'a weathered', 'a pristine'];
 
-const insertx = ['hourglass with suspended :insertb: sand', 'leather book', ':inserty: pendant', ':inserta: skull', 'copper coin', 'box lined with :insertb: velvet, containing your rotting heart.'];
+const insertx = ['hourglass with suspended :insertb: sand', 'leather book', ':inserty: pendant', ':inserta: skull', 'copper coin', 'box lined with :insertb: velvet, containing your rotting heart'];
 
 const inserty = ['ruby', 'sapphire', 'emerald', 'topaz', 'rose quartz', 'diamond', 'onyx'];
 
