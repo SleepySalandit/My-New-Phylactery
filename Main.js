@@ -4,12 +4,14 @@ const phylacterylocation = document.querySelector('.phylacterylocation');
 const phylacteryweakness = document.querySelector('.phylacteryweakness');
 const phylacterydefense = document.querySelector('.phylacterydefense');
 const phylacteryfake = document.querySelector('.phylacteryfake');
+const fakedefense = document.querySelector('.fakedefense');
 
 const sentence1 = 'Your phylactery is :insertw: :insertx:, with the arcane runes needed for your lichdom written with :insertz:.';
 const sentence2 = 'Your phylactery is located in :insertc:.';
 const sentence3 = 'Your phylactery can only be destroyed using :insertd:.';
 const sentence4 = 'Your phylactery is guarded primarily by :inserte: as its last line of defense.';
 const sentence5 = 'You also have a fake phylactery, one taking the form of :insertg:.';
+const sentence6 = 'Your fake phylactery is located in a rather standard dungeon, guarded by :inserti:.'
 
 const insertw = ['a beautiful', 'an enormous', 'a weathered', 'a pristine'];
 
@@ -35,6 +37,10 @@ const insertg = ['a statuette made of :inserth:, one with your likeness', 'a via
 
 const inserth = ['ruby', 'sapphire', 'emerald', 'topaz', 'rose quartz', 'diamond', 'onyx'];
 
+const inserti = ['a swarm of demons', 'an immense pit filled with :insertj:', 'glyphs that, when the fake is moved or touched, fire off powerful :insertf: magic', 'a barrier comprised of magic', 'a young dragon under your command'];
+
+const insertj = ['spikes', 'acid', 'venomous snakes or other such creatures', 'lava', 'water', 'oozes', 'golems', 'zombies'];
+
 randomize.addEventListener('click', generate);
 
 function randomValueFromArray(array){
@@ -49,6 +55,7 @@ function generate()
     let newPhylactery3 = sentence3;
     let newPhylactery4 = sentence4;
     let newPhylactery5 = sentence5;
+    let newPhylactery6 = sentence6;
 
     const itemw = randomValueFromArray(insertw);
     const itemx = randomValueFromArray(insertx);
@@ -67,6 +74,9 @@ function generate()
     const itemg = randomValueFromArray(insertg);
     const itemh = randomValueFromArray(inserth);
 
+    const itemi = randomValueFromArray(inserti);
+    const itemj = randomValueFromArray(insertj);
+
     newPhylactery1 =newPhylactery1.replaceAll(':insertw:', itemw);
     newPhylactery1 =newPhylactery1.replaceAll(':insertx:', itemx);
     newPhylactery1 =newPhylactery1.replaceAll(':inserty:', itemy);
@@ -84,6 +94,10 @@ function generate()
     newPhylactery5 =newPhylactery5.replaceAll(':insertg:', itemg);
     newPhylactery5 =newPhylactery5.replaceAll(':inserth:', itemh);
 
+    newPhylactery6 =newPhylactery6.replaceAll(':inserti:', itemi);
+    newPhylactery6 =newPhylactery6.replaceAll(':insertj:', itemj);
+    newPhylactery6 =newPhylactery6.replaceAll(':insertf:', itemf);
+
     phylacteryobject.textContent = newPhylactery1;
     phylacteryobject.style.visibility = 'visible';
 
@@ -98,4 +112,7 @@ function generate()
 
     phylacteryfake.textContent = newPhylactery5;
     phylacteryfake.style.visibility = 'visible';
+
+    fakedefense.textContent = newPhylactery6;
+    fakedefense.style.visibility = 'visible';
 }
